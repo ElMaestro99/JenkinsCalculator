@@ -18,6 +18,9 @@ class Calculator {
     }
 
     int divide(int a , int b){
+        if (b == 0) {
+            throw new ArithmeticException("/ by zero");
+        }
         return a / b;
     }
 
@@ -65,6 +68,9 @@ class Calculator {
      */
     String intToBinaryNumber(int n){
         String s = "";
+        if (n == 0) {
+            return "0";
+        }
         while (n > 0)
         {
             s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
