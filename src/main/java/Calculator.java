@@ -37,7 +37,6 @@ class Calculator {
     3 = 2
     4 = 3
     5 = 5
-    6 = 8
     .
     .
     .
